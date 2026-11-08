@@ -2,9 +2,9 @@
 <html lang="bn" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>শাহী লেবাস | Shahi Libas - পুরান ঢাকার রয়্যাল পাঞ্জাবি ও শেরওয়ানি কালেকশন</title>
-  <meta name="description" content="শাহী লেবাস - পুরান ঢাকা চকবাজারের প্রিমিয়াম ঐতিহ্যবাহী পাঞ্জাবি, শেরওয়ানি, কাবলি ও কোটি কালেকশন। ১০০% প্রিমিয়াম সুতি ফেব্রিক ও মাস্টার কাটিং।">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>শাহী লেবাস | Shahi Libas — পুরান ঢাকা চকবাজারের পাইকারি পাঞ্জাবি কালেকশন (B2B Wholesale Portal)</title>
+  <meta name="description" content="শাহী লেবাস চকবাজার উর্দূ রোড - সারা দেশের কাপড়ের দোকান ও শোরুম ব্যবসায়ীদের জন্য সরাসরি কারখানার পাইকারি মূল্যে প্রিমিয়াম পাঞ্জাবি, কাবলি ও শেরওয়ানি কালেকশন। ৩-পিস বান্ডেল ও ১২-পিস মাস্টার সেট।">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
 
   <!-- Google Fonts -->
@@ -16,7 +16,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           colors: {
@@ -28,14 +27,16 @@
               700: '#2f2f40'
             },
             gold: {
-              100: '#fdf7d5',
-              200: '#faeca8',
-              300: '#f3d978',
-              400: '#e5c453',
-              500: '#d4af37',
-              600: '#b38b2d',
-              700: '#846624',
-              800: '#5a461b'
+              50: '#faf8f0',
+              100: '#f4eed8',
+              200: '#e8dcaf',
+              300: '#d9c47e',
+              400: '#c7a94d',
+              500: '#b8860b',
+              600: '#9b6c08',
+              700: '#7a5109',
+              800: '#5a3b0b',
+              900: '#3e2808'
             }
           },
           fontFamily: {
@@ -54,208 +55,263 @@
   <style>
     body {
       font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
-      background-color: #070709;
-      color: #f3f4f6;
+      background-color: #f8fafc;
+      color: #0f172a;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
     }
+
     .gold-gradient-text {
-      background: linear-gradient(135deg, #fdf7d5 0%, #d4af37 50%, #b38b2d 100%);
+      background: linear-gradient(135deg, #78350f 0%, #b45309 40%, #d97706 70%, #b8860b 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .badge-blur {
-      backdrop-filter: blur(14px);
-      background: rgba(16, 16, 21, 0.82);
+
+    .solid-navbar {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
-    .gold-card-glow {
-      box-shadow: 0 0 35px rgba(212, 175, 55, 0.12);
+
+    .solid-bottom-bar {
+      background-color: #ffffff;
+      border-top: 1px solid #e2e8f0;
+      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.06);
     }
-    .pulse-glow {
-      animation: pulseGlow 2.2s infinite;
+
+    .wholesale-card {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+      border-radius: 1.25rem;
     }
-    @keyframes pulseGlow {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-      50% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+
+    .active-thumb {
+      border-color: #d97706 !important;
+      box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.3) !important;
+    }
+
+    .content-auto {
+      content-visibility: auto;
+      contain-intrinsic-size: 1px 500px;
     }
   </style>
 </head>
-<body class="min-h-screen pb-28 text-gray-100">
+<body class="min-h-screen pb-24 text-slate-800 bg-[#f8fafc]">
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-gradient-to-r from-gold-800 via-gold-600 to-gold-800 text-royal-950 font-bold text-xs md:text-sm py-2 px-4 text-center tracking-wide shadow-md">
-    👑 চকবাজার উর্দূ রোড শোরুম থেকে সরাসরি কালেকশন | সারা বাংলাদেশে হোম ডেলিভারি ও দেখে নেওয়ার সুযোগ
+  <!-- Top Announcement Bar (Wholesale Ribbon) -->
+  <div class="bg-gradient-to-r from-amber-700 via-amber-600 to-amber-700 text-white font-bold text-[11px] sm:text-xs md:text-sm py-2 px-3 text-center tracking-wide shadow-sm flex items-center justify-center gap-1.5">
+    <span>👑 পুরান ঢাকা চকবাজার উর্দূ রোড পাইকারি হাব • দেশজুড়ে শোরুম ও কাপড়ের দোকানদারদের সরাসরি কারখানার পাইকারি রেট</span>
   </div>
 
   <!-- Header / Navbar -->
-  <header class="sticky top-0 z-50 badge-blur border-b border-gold-500/20 px-4 py-3">
-    <div class="max-w-5xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-gold-400 via-gold-500 to-gold-700 flex items-center justify-center text-royal-950 font-serif font-black text-xl shadow-lg ring-2 ring-gold-400/40">
+  <header class="sticky top-0 z-40 solid-navbar px-3.5 py-2.5">
+    <div class="max-w-5xl mx-auto flex items-center justify-between gap-2">
+      
+      <!-- Brand Logo & Wholesale Badge -->
+      <div class="flex items-center gap-2.5 min-w-0">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-white font-serif font-black text-lg shadow-sm flex-shrink-0">
           SL
         </div>
-        <div>
-          <h1 class="text-lg md:text-xl font-extrabold tracking-tight gold-gradient-text font-serif leading-none">SHAHI LIBAS</h1>
-          <p class="text-[11px] md:text-xs text-gold-300/80 font-medium mt-0.5">শাহী লেবাস • চকবাজার, পুরান ঢাকা</p>
+        <div class="min-w-0">
+          <div class="flex items-center gap-1.5">
+            <h1 class="text-base sm:text-lg font-black tracking-tight text-slate-900 font-serif leading-none truncate">
+              SHAHI LIBAS
+            </h1>
+            <span class="text-[9px] sm:text-[10px] bg-amber-100 text-amber-800 border border-amber-300 px-1.5 py-0.2 rounded-md font-bold flex-shrink-0">
+              পাইকারি পোর্টাল
+            </span>
+          </div>
+          <p class="text-[10px] sm:text-xs text-slate-500 font-medium truncate mt-0.5">
+            চকবাজার উর্দূ রোড • পুরান ঢাকা
+          </p>
         </div>
       </div>
-      <div class="flex items-center gap-2">
-        <a href="tel:01828672675" class="hidden sm:flex items-center gap-1.5 text-xs text-gray-300 hover:text-gold-300 font-semibold px-3 py-1.5 rounded-full border border-gold-500/20 transition">
-          <i data-lucide="phone" class="w-3.5 h-3.5 text-gold-400"></i>
+      
+      <!-- Action Links -->
+      <div class="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
+        <a href="tel:01828672675" class="hidden sm:flex items-center gap-1.5 text-xs text-slate-700 hover:text-amber-700 font-bold px-3 py-1.5 rounded-full border border-slate-200 transition">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-600"></i>
           <span>01828-672675</span>
         </a>
-        <a href="https://wa.me/8801828672675" target="_blank" class="flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-royal-950 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold shadow-md transition">
-          <i data-lucide="message-circle" class="w-4 h-4 fill-royal-950"></i>
-          <span>হোয়াটসঅ্যাপ</span>
+        <a href="https://wa.me/8801828672675" target="_blank" class="flex items-center gap-1 bg-[#25D366] hover:bg-[#20ba5a] text-slate-950 px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-sm transition active:scale-95">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 fill-slate-950"></i>
+          <span>হোলসেল ইনকোয়ারি</span>
         </a>
       </div>
+
     </div>
   </header>
 
-  <!-- Hero Spotlight: The Signature Edition 2026 -->
-  <section class="px-4 pt-6 pb-8 max-w-5xl mx-auto">
+  <!-- Hero Section -->
+  <section class="px-3.5 pt-5 pb-6 max-w-5xl mx-auto">
     
-    <div class="text-center mb-6">
-      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold mb-2">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        রয়্যাল সিগনেচার ড্রপ ২০২৬ • এক্সক্লুসিভ কালেকশন
+    <!-- Title & Value Badge -->
+    <div class="text-center mb-5">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-[11px] sm:text-xs font-bold mb-2 shadow-xs">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        চকবাজার উর্দূ রোড সরাসরি কারখানা পাইকারি সাপ্লাই • সিজন ২০২৬
       </div>
-      <h2 class="text-2xl md:text-4xl font-extrabold text-white leading-tight font-serif">
-        পুরান ঢাকার ঐতিহ্য ও আভিজাত্য <br class="hidden sm:block">
-        <span class="gold-gradient-text">রয়্যাল ডিজিটাল প্রিন্ট পাঞ্জাবি</span>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight font-serif">
+        সারা দেশের কাপড়ের দোকান ও শোরুমের জন্য <br class="hidden sm:block">
+        <span class="gold-gradient-text">প্রিমিয়াম পাঞ্জাবির পাইকারি ক্যাটালগ</span>
       </h2>
-      <p class="text-xs md:text-sm text-gray-300 mt-2 max-w-xl mx-auto leading-relaxed">
-        চকবাজারের অভিজ্ঞ কারিগরদের নিখুঁত কাটিং, ১০০% ব্রিদেবল প্রিমিয়াম কটন ব্লেন্ড ফেব্রিক এবং মেটাল সিগনেচার বোতামে তৈরি রাজকীয় লুক।
+      <p class="text-xs sm:text-sm text-slate-600 mt-2 max-w-2xl mx-auto leading-relaxed">
+        প্রতি কালারে ৩ পিসের ফিক্সড রানিং সাইজ বান্ডেল (৩৮, ৪০, ৪২) এবং ৩/৪ কালারের ফুল মাস্টার সেট। ইনবক্সে বারবার ছবি চাওয়ার ঝামেলা ছাড়াই সরাসরি পাইকারি মেমো বুকিং করুন।
       </p>
     </div>
 
-    <!-- Spotlight Product Showcase Card -->
-    <div class="bg-gradient-to-br from-royal-900 via-royal-850 to-royal-900 border border-gold-500/30 rounded-3xl p-4 md:p-6 shadow-2xl gold-card-glow">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+    <!-- Wholesale B2B Spotlight Card (Interactive Bundle Calculator) -->
+    <div class="wholesale-card p-4 sm:p-6 border border-amber-200/90 shadow-lg bg-white">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-8 items-center">
         
         <!-- Interactive Gallery (Left Column) -->
         <div class="lg:col-span-6 flex flex-col gap-3">
-          <div class="relative aspect-[3/4] bg-royal-950 rounded-2xl overflow-hidden border border-gold-500/25 shadow-inner">
-            <img id="mainSpotlightImg" src="images/hero_portrait.webp" alt="Shahi Libas Royal Panjabi" class="w-full h-full object-cover transition-opacity duration-300">
+          
+          <div class="relative aspect-[3/4] bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-inner">
+            <img id="mainSpotlightImg" src="images/hero_portrait.webp" alt="Shahi Libas Wholesale Punjabi" class="w-full h-full object-cover transition-opacity duration-200" loading="eager">
             
-            <div class="absolute top-3 left-3 bg-gradient-to-r from-gold-500 to-gold-600 text-royal-950 text-xs font-black px-3 py-1 rounded-full shadow-lg">
-              ✨ অফিশিয়াল সিগনেচার
+            <div class="absolute top-2.5 left-2.5 bg-amber-500 text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow-sm">
+              👑 কারখানার পাইকারি কালেকশন
             </div>
-            <div class="absolute bottom-3 right-3 bg-black/80 backdrop-blur text-gold-300 text-xs font-mono px-3 py-1 rounded-lg border border-gold-500/30">
-              #SLB-ROYAL-01
+            <div id="spotlightCode" class="absolute bottom-2.5 right-2.5 bg-white/95 text-slate-800 text-xs font-mono font-bold px-2.5 py-1 rounded-lg border border-slate-200 shadow-sm">
+              #SLB-W-01
             </div>
           </div>
 
           <!-- Thumbnail Switcher Buttons -->
           <div class="grid grid-cols-3 gap-2">
-            <button type="button" onclick="switchSpotlight('images/hero_portrait.webp', this)" class="spotlight-thumb active-thumb aspect-video rounded-xl overflow-hidden border-2 border-gold-400 shadow-md relative group">
-              <img src="images/hero_portrait.webp" class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-[10px] text-white font-bold">মডেল লুক</div>
+            <button type="button" onclick="switchSpotlight('images/hero_portrait.webp', this)" class="spotlight-thumb active-thumb aspect-video rounded-xl overflow-hidden border-2 border-slate-200 transition relative">
+              <img src="images/hero_portrait.webp" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-black/35 flex items-center justify-center text-[10px] text-white font-bold">মডেল লুক</div>
             </button>
-            <button type="button" onclick="switchSpotlight('images/box_details.webp', this)" class="spotlight-thumb aspect-video rounded-xl overflow-hidden border border-gold-500/20 hover:border-gold-400 transition relative group">
-              <img src="images/box_details.webp" class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-[10px] text-white font-bold">গিফট বক্স ও ফেব্রিক</div>
+            <button type="button" onclick="switchSpotlight('images/box_details.webp', this)" class="spotlight-thumb aspect-video rounded-xl overflow-hidden border border-slate-200 hover:border-amber-400 transition relative">
+              <img src="images/box_details.webp" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-black/35 flex items-center justify-center text-[10px] text-white font-bold">গিফট বক্স ও ফেব্রিক</div>
             </button>
-            <button type="button" onclick="switchSpotlight('images/fit_features.webp', this)" class="spotlight-thumb aspect-video rounded-xl overflow-hidden border border-gold-500/20 hover:border-gold-400 transition relative group">
-              <img src="images/fit_features.webp" class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-[10px] text-white font-bold">কলার ও বোতাম</div>
+            <button type="button" onclick="switchSpotlight('images/fit_features.webp', this)" class="spotlight-thumb aspect-video rounded-xl overflow-hidden border border-slate-200 hover:border-amber-400 transition relative">
+              <img src="images/fit_features.webp" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-black/35 flex items-center justify-center text-[10px] text-white font-bold">কলার ও বোতাম</div>
             </button>
           </div>
         </div>
 
-        <!-- Product Details & Conversion Controls (Right Column) -->
+        <!-- Wholesale Details & Order Calculator (Right Column) -->
         <div class="lg:col-span-6 flex flex-col justify-between h-full">
           <div>
-            <div class="flex items-center gap-2 mb-2">
-              <div class="flex text-amber-400 text-xs">★★★★★</div>
-              <span class="text-xs text-gray-400 font-medium">(১৩০+ রেটিং ও রিভিউ)</span>
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="bg-amber-100 text-amber-800 border border-amber-300 text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+                🏭 চকবাজার উর্দূ রোড ডিরেক্ট ফ্যাক্টরি রেট
+              </span>
+              <span class="text-xs text-emerald-700 font-bold">✓ রেডি স্টক</span>
             </div>
 
-            <h3 class="text-xl md:text-2xl font-bold text-white font-serif leading-snug">
+            <h3 id="spotlightTitle" class="text-xl sm:text-2xl font-black text-slate-900 leading-tight">
               রয়্যাল ব্লু আর্টিজান ডিজিটাল প্রিন্ট পাঞ্জাবি
             </h3>
-            <p class="text-xs text-gold-300 font-mono mt-0.5">কোড: #SLB-ROYAL-01 • চকবাজার উর্দূ রোড স্পেশাল</p>
+            <p class="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">
+              ১০০% পিওর সুতি কমফোর্ট ব্লেন্ড • স্টিফ প্রেসড কলার • এন্টিক মেটাল বোতাম
+            </p>
 
-            <!-- Pricing Box -->
-            <div class="bg-royal-950/80 rounded-2xl border border-gold-500/20 p-4 my-4 flex items-center justify-between">
-              <div>
-                <span class="text-xs text-gray-400 block">সিজনাল ডিসকাউন্ট মূল্য</span>
-                <div class="flex items-baseline gap-2 mt-0.5">
-                  <span class="text-2xl md:text-3xl font-extrabold text-gold-400 font-serif">৳২,২৫০</span>
-                  <span class="text-sm text-gray-500 line-through">৳২,৯৫০</span>
+            <!-- Wholesale Pricing Dashboard -->
+            <div class="bg-gradient-to-r from-amber-50/90 via-amber-50/50 to-white border border-amber-200 rounded-2xl p-4 my-3.5 shadow-xs">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <span class="text-[11px] text-slate-600 block font-medium">পাইকারি রেট (প্রতি পিস)</span>
+                  <div class="flex items-baseline gap-2 mt-0.5">
+                    <span class="text-2xl sm:text-3xl font-black text-amber-800 font-serif">৳৯৫০</span>
+                    <span class="text-xs text-slate-400">/ পিস</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="text-[11px] text-slate-500 block">সম্ভাব্য খুচরা বিক্রয় মূল্য</span>
+                  <span class="text-base font-bold text-slate-800">৳১,৬৫০ – ৳১,৯৫০</span>
+                  <span class="block text-[10px] font-bold text-emerald-700 mt-0.5">দোকানদারের লাভ: প্রায় ৭০%+!</span>
                 </div>
               </div>
-              <div class="text-right">
-                <span class="inline-block bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full">
-                  ৳৭০০ সাশ্রয়
-                </span>
-                <span class="text-[11px] text-gray-400 block mt-1">🎁 ফ্রি ব্র্যান্ডেড বক্স</span>
-              </div>
             </div>
 
-            <!-- Bullet Highlights -->
-            <div class="space-y-2 mb-4 text-xs md:text-sm text-gray-300">
-              <div class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 flex-shrink-0"></i>
-                <span><strong>প্রিমিয়াম কলার:</strong> স্টিফ প্রেসড কলার, সারাদিন টানটান ফিট থাকে।</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 flex-shrink-0"></i>
-                <span><strong>স্টাইলিশ বোতাম:</strong> নিখুঁত এনগ্রেভড এন্টিক মেটাল বোতাম।</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 flex-shrink-0"></i>
-                <span><strong>ব্রিদেবল ফেব্রিক:</strong> গরমেও অত্যন্ত আরামদায়ক সুতি কমফোর্ট ব্লেন্ড।</span>
-              </div>
-            </div>
+            <!-- Wholesale Bundle Selector -->
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-3.5 mb-4 space-y-3">
+              <div>
+                <div class="flex items-center justify-between text-xs mb-1.5">
+                  <span class="font-bold text-slate-900 flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span> ১. পাইকারি বান্ডেল প্যাকেজ নির্বাচন করুন:
+                  </span>
+                  <span class="text-[11px] text-slate-500">প্রতি কালারে ৩ পিস</span>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2" id="bundleOptionGrid">
+                  
+                  <!-- Option 1: 1 Color Bundle (3 Pcs) -->
+                  <button type="button" onclick="selectBundle('1_color', 3, 2850, '১ কালার বান্ডেল (৩ পিস)', this)" class="bundle-btn p-2.5 rounded-xl border border-slate-200 bg-white text-left transition hover:border-amber-400 shadow-xs">
+                    <div class="flex items-center justify-between mb-0.5">
+                      <span class="text-xs font-bold text-slate-900">১ কালার বান্ডেল</span>
+                      <span class="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.2 rounded font-mono font-bold">৩ পিস</span>
+                    </div>
+                    <p class="text-[10px] text-slate-500">সাইজ: ৩৮, ৪০, ৪২</p>
+                    <p class="text-xs font-black text-amber-700 mt-1">বিল: ৳২,৮৫০</p>
+                  </button>
 
-            <!-- Size Selector -->
-            <div class="mb-5">
-              <div class="flex items-center justify-between text-xs mb-2">
-                <span class="font-bold text-white">সাইজ সিলেক্ট করুন:</span>
-                <button type="button" onclick="openSizeGuide()" class="text-gold-400 hover:underline flex items-center gap-1 font-medium text-[11px]">
-                  <i data-lucide="ruler" class="w-3.5 h-3.5"></i> সাইজ চার্ট দেখুন
-                </button>
+                  <!-- Option 2: 2 Color Bundle (6 Pcs) -->
+                  <button type="button" onclick="selectBundle('2_color', 6, 5700, '২ কালার বান্ডেল (৬ পিস)', this)" class="bundle-btn p-2.5 rounded-xl border border-slate-200 bg-white text-left transition hover:border-amber-400 shadow-xs">
+                    <div class="flex items-center justify-between mb-0.5">
+                      <span class="text-xs font-bold text-slate-900">২ কালার সেট</span>
+                      <span class="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.2 rounded font-mono font-bold">৬ পিস</span>
+                    </div>
+                    <p class="text-[10px] text-slate-500">৩৮, ৪০, ৪২ × ২</p>
+                    <p class="text-xs font-black text-amber-700 mt-1">বিল: ৳৫,৭০০</p>
+                  </button>
+
+                  <!-- Option 3: Full Master Carton (12 Pcs) -->
+                  <button type="button" onclick="selectBundle('master_set', 12, 11400, 'ফুল ৪-কালার মাস্টার সেট (১২ পিস)', this)" class="bundle-btn active-bundle p-2.5 rounded-xl border-2 border-amber-500 bg-amber-50/50 text-left transition shadow-sm relative">
+                    <span class="absolute -top-2 right-2 bg-amber-500 text-white text-[9px] font-bold px-1.5 rounded-full">⭐ শোরুম সেরা</span>
+                    <div class="flex items-center justify-between mb-0.5">
+                      <span class="text-xs font-bold text-slate-900">মাস্টার সেট</span>
+                      <span class="text-[10px] bg-amber-200 text-amber-900 px-1.5 py-0.2 rounded font-mono font-bold">১২ পিস</span>
+                    </div>
+                    <p class="text-[10px] text-slate-600 font-medium">৪ কালার কমপ্লিট সেট</p>
+                    <p class="text-xs font-black text-amber-800 mt-1">বিল: ৳১১,৪০০</p>
+                  </button>
+
+                </div>
               </div>
-              <div class="grid grid-cols-4 gap-2" id="heroSizeContainer">
-                <button type="button" onclick="selectHeroSize('৩৮', 'বুক ৪০ ইঞ্চি', this)" class="hero-size-btn py-2 rounded-xl border border-gold-500/20 text-xs font-semibold bg-royal-800 text-gray-200 hover:bg-royal-700 transition text-center">
-                  <span class="block font-bold">৩৮</span>
-                  <span class="text-[10px] text-gray-400 block">বুক ৪০"</span>
-                </button>
-                <button type="button" onclick="selectHeroSize('৪০', 'বুক ৪২ ইঞ্চি', this)" class="hero-size-btn py-2 rounded-xl border border-gold-500 bg-gold-500 text-royal-950 font-bold transition text-center shadow-md">
-                  <span class="block font-bold">৪০</span>
-                  <span class="text-[10px] text-royal-950/80 block">বুক ৪২"</span>
-                </button>
-                <button type="button" onclick="selectHeroSize('৪২', 'বুক ৪৪ ইঞ্চি', this)" class="hero-size-btn py-2 rounded-xl border border-gold-500/20 text-xs font-semibold bg-royal-800 text-gray-200 hover:bg-royal-700 transition text-center">
-                  <span class="block font-bold">৪২</span>
-                  <span class="text-[10px] text-gray-400 block">বুক ৪৪"</span>
-                </button>
-                <button type="button" onclick="selectHeroSize('৪৪', 'বুক ৪৬ ইঞ্চি', this)" class="hero-size-btn py-2 rounded-xl border border-gold-500/20 text-xs font-semibold bg-royal-800 text-gray-200 hover:bg-royal-700 transition text-center">
-                  <span class="block font-bold">৪৪</span>
-                  <span class="text-[10px] text-gray-400 block">বুক ৪৬"</span>
-                </button>
+
+              <!-- Shop Name & Location (Optional B2B Memo Fields) -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 border-t border-slate-200/80">
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-700 mb-1">আপনার দোকানের নাম (ঐচ্ছিক):</label>
+                  <input type="text" id="shopNameInput" oninput="updateHeroWhatsAppLink()" placeholder="যেমন: নিউ ফ্যাশন, সিলেট" class="w-full text-xs px-3 py-2 rounded-xl border border-slate-300 bg-white focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-700 mb-1">জেলা / থানা বাজার:</label>
+                  <input type="text" id="shopLocationInput" oninput="updateHeroWhatsAppLink()" placeholder="যেমন: বগুড়া সদর" class="w-full text-xs px-3 py-2 rounded-xl border border-slate-300 bg-white focus:outline-none focus:border-amber-500">
+                </div>
               </div>
+
             </div>
           </div>
 
-          <!-- WhatsApp Primary CTA -->
-          <div>
-            <a id="heroWhatsAppBtn" href="#" target="_blank" class="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-[#25D366] to-[#1ebe5d] hover:brightness-110 text-royal-950 font-black py-3.5 px-6 rounded-2xl text-sm md:text-base shadow-xl pulse-glow transition active:scale-[0.98]">
-              <i data-lucide="message-circle" class="w-5 h-5 fill-royal-950"></i>
-              <span>হোয়াটসঅ্যাপে সরাসরি অর্ডার করুন (ক্যাশ অন ডেলিভারি)</span>
+          <!-- Wholesale Order CTA Button -->
+          <div class="space-y-2">
+            <a id="heroWhatsAppBtn" href="#" target="_blank" class="w-full flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#20ba5a] text-slate-950 font-black py-3.5 px-4 rounded-xl text-sm md:text-base shadow-md transition active:scale-95">
+              <i data-lucide="file-text" class="w-5 h-5 fill-slate-950"></i>
+              <span id="heroOrderBtnText">হোয়াটসঅ্যাপে পাইকারি মেমো পাঠান (বিল: ৳১১,৪০০)</span>
             </a>
             
-            <!-- Trust Footnotes -->
-            <div class="grid grid-cols-3 gap-2 mt-3 text-center text-[11px] text-gray-400">
+            <!-- Wholesale Guarantees -->
+            <div class="grid grid-cols-3 gap-1 pt-2 text-center text-[10px] sm:text-[11px] text-slate-500 font-semibold border-t border-slate-100">
               <div class="flex items-center justify-center gap-1">
-                <i data-lucide="truck" class="w-3.5 h-3.5 text-gold-400"></i>
-                <span>সারা দেশে ডেলিভারি</span>
+                <i data-lucide="truck" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>কুরিয়ার কন্ডিশনে ডেলিভারি</span>
               </div>
               <div class="flex items-center justify-center gap-1">
-                <i data-lucide="eye" class="w-3.5 h-3.5 text-gold-400"></i>
-                <span>দেখে পেমেন্ট</span>
+                <i data-lucide="box" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>৩৮, ৪০, ৪২ সাইজ রেশিও</span>
               </div>
               <div class="flex items-center justify-center gap-1">
-                <i data-lucide="refresh-cw" class="w-3.5 h-3.5 text-gold-400"></i>
-                <span>সহজ এক্সচেঞ্জ</span>
+                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-amber-600"></i>
+                <span>১০০% ড্যামেজ রিপ্লেসমেন্ট</span>
               </div>
             </div>
           </div>
@@ -266,429 +322,374 @@
     </div>
   </section>
 
-  <!-- Deep Craftsmanship & Feature Deep-Dive Section -->
-  <section class="px-4 py-8 max-w-5xl mx-auto border-t border-gold-500/15">
-    <div class="text-center mb-6">
-      <h3 class="text-xl md:text-2xl font-bold text-white font-serif">কেন শাহী লেবাসের পাঞ্জাবি অনন্য?</h3>
-      <p class="text-xs md:text-sm text-gray-400 mt-1">চকবাজারের ঐতিহ্য ও কোয়ালিটি কন্ট্রোল</p>
+  <!-- Why Wholesale from Shahi Libas (দোকানদারদের সুবিধা) -->
+  <section class="px-3.5 py-6 max-w-5xl mx-auto content-auto">
+    <div class="text-center mb-5">
+      <h3 class="text-xl sm:text-2xl font-bold text-slate-900 font-serif">পাইকারিতে শাহী লেবাস কেন ব্যবসায়ীদের প্রথম পছন্দ?</h3>
+      <p class="text-xs sm:text-sm text-slate-500 mt-1">চকবাজার উর্দূ রোডের ঐতিহ্যবাহী নিজস্ব কারখানা ও মাস্টার কাটিং</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="bg-royal-900/90 border border-gold-500/20 rounded-2xl p-4 flex flex-col items-center text-center">
-        <div class="w-12 h-12 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-3">
-          <i data-lucide="sparkles" class="w-6 h-6"></i>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
+      <div class="wholesale-card p-4 flex flex-col items-center text-center">
+        <div class="w-11 h-11 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-600 mb-2">
+          <i data-lucide="factory" class="w-5 h-5"></i>
         </div>
-        <h4 class="text-base font-bold text-white mb-1">প্রিমিয়াম কলার ও বোতাম</h4>
-        <p class="text-xs text-gray-400 leading-relaxed">
-          বিশেষ ফিউজিং প্রযুক্তি ও স্টিফ ব্যান্ড কলার যা ধোয়ার পরেও আকৃতি হারায় না। সাথে এক্সক্লুসিভ খোদাই করা এন্টিক মেটাল বোতাম।
+        <h4 class="text-sm font-bold text-slate-900 mb-1">সরাসরি কারখানার রেট</h4>
+        <p class="text-[11px] text-slate-600 leading-relaxed">
+          কোনো থার্ড-পার্টি বা দালালের কমিশন নেই। সরাসরি কারখানা মূল্যে নিয়ে সর্বোচ্চ মার্জিনে দোকানে বিক্রি করুন।
         </p>
       </div>
 
-      <div class="bg-royal-900/90 border border-gold-500/20 rounded-2xl p-4 flex flex-col items-center text-center">
-        <div class="w-12 h-12 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-3">
-          <i data-lucide="feather" class="w-6 h-6"></i>
+      <div class="wholesale-card p-4 flex flex-col items-center text-center">
+        <div class="w-11 h-11 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-600 mb-2">
+          <i data-lucide="layers" class="w-5 h-5"></i>
         </div>
-        <h4 class="text-base font-bold text-white mb-1">১০০% কমফোর্ট কটন ব্লেন্ড</h4>
-        <p class="text-xs text-gray-400 leading-relaxed">
-          আমাদের আবহাওয়ার কথা মাথায় রেখে তৈরি লাইটওয়েট, অত্যন্ত আরামদায়ক ও ব্রিদেবল ফেব্রিক—সারাদিন পরে থাকলেও সতেজ অনুভূতি থাকে।
+        <h4 class="text-sm font-bold text-slate-900 mb-1">ফিক্সড ৩-পিস সাইজ রেশিও</h4>
+        <p class="text-[11px] text-slate-600 leading-relaxed">
+          প্রতিটি কালারে সবচেয়ে দ্রুত বিক্রি হওয়া ৩টি সাইজ (৩৮, ৪০, ৪২) থাকবে। দোকানে কোনো সাইজ আটকে থাকবে না।
         </p>
       </div>
 
-      <div class="bg-royal-900/90 border border-gold-500/20 rounded-2xl p-4 flex flex-col items-center text-center">
-        <div class="w-12 h-12 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-3">
-          <i data-lucide="scissors" class="w-6 h-6"></i>
+      <div class="wholesale-card p-4 flex flex-col items-center text-center">
+        <div class="w-11 h-11 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-600 mb-2">
+          <i data-lucide="truck" class="w-5 h-5"></i>
         </div>
-        <h4 class="text-base font-bold text-white mb-1">পুরান ঢাকার পারফেক্ট কাটিং</h4>
-        <p class="text-xs text-gray-400 leading-relaxed">
-          উর্দূ রোডের অভিজ্ঞ মাস্টার টেইলারদের নিখুঁত শোল্ডার ড্রপ ও সাইড স্লিট ডিজাইন, যা যেকোনো শরীরে দেয় নিখুঁত রাজকীয় ফিট।
+        <h4 class="text-sm font-bold text-slate-900 mb-1">কুরিয়ার কন্ডিশন সুবিধা</h4>
+        <p class="text-[11px] text-slate-600 leading-relaxed">
+          এসএ পরিবহন, সুন্দরবন ও করতোয়া কুরিয়ারে সারা দেশের জেলা-উপজেলায় কন্ডিশনে মাল পাঠানো হয়।
+        </p>
+      </div>
+
+      <div class="wholesale-card p-4 flex flex-col items-center text-center">
+        <div class="w-11 h-11 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-600 mb-2">
+          <i data-lucide="check-check" class="w-5 h-5"></i>
+        </div>
+        <h4 class="text-sm font-bold text-slate-900 mb-1">ড্যামেজ গ্যারান্টি</h4>
+        <p class="text-[11px] text-slate-600 leading-relaxed">
+          ফেব্রিক বা সেলাইয়ে কোনো কারখানাগত ত্রুটি থাকলে সম্পূর্ণ ফ্রিতে পরবর্তী অর্ডারে এক্সচেঞ্জ করে দেওয়া হয়।
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Complete Collection Grid Section -->
-  <section class="px-4 py-8 max-w-5xl mx-auto border-t border-gold-500/15">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-3">
+  <!-- Complete Wholesale Catalog Grid -->
+  <section class="px-3.5 py-6 max-w-5xl mx-auto content-auto">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-5">
       <div>
-        <h3 class="text-2xl font-bold text-white font-serif">আরও এক্সক্লুসিভ কালেকশন</h3>
-        <p class="text-xs text-gray-400 mt-1">চকবাজার শোরুম থেকে সরাসরি পছন্দ করে অর্ডার করুন</p>
+        <h3 class="text-xl sm:text-2xl font-bold text-slate-900 font-serif">সম্পূর্ণ পাইকারি কালেকশন (রানিং ডিজাইন)</h3>
+        <p class="text-xs sm:text-sm text-slate-500">প্রতি কালারে ৩ পিসের বান্ডেল (৩৮, ৪০, ৪২ সাইজ রেশিও সহ)</p>
       </div>
+
       <!-- Filter Tabs -->
-      <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none text-xs">
-        <button onclick="filterCategory('all', this)" class="cat-btn active-cat px-3.5 py-1.5 rounded-full bg-gold-500 text-royal-950 font-bold transition whitespace-nowrap">সবগুলো</button>
-        <button onclick="filterCategory('panjabi', this)" class="cat-btn px-3.5 py-1.5 rounded-full bg-royal-900 border border-gold-500/20 text-gray-300 font-medium hover:bg-royal-800 transition whitespace-nowrap">পাঞ্জাবি</button>
-        <button onclick="filterCategory('sherwani', this)" class="cat-btn px-3.5 py-1.5 rounded-full bg-royal-900 border border-gold-500/20 text-gray-300 font-medium hover:bg-royal-800 transition whitespace-nowrap">শেরওয়ানি</button>
-        <button onclick="filterCategory('kabli', this)" class="cat-btn px-3.5 py-1.5 rounded-full bg-royal-900 border border-gold-500/20 text-gray-300 font-medium hover:bg-royal-800 transition whitespace-nowrap">কাবলি ও কটি</button>
+      <div class="flex items-center gap-1.5 overflow-x-auto max-w-full pb-1 text-xs">
+        <button onclick="filterCategory('all', this)" class="cat-btn active-cat px-3 py-1.5 rounded-full bg-amber-500 text-white font-bold transition whitespace-nowrap shadow-xs">সব কালেকশন (৮)</button>
+        <button onclick="filterCategory('panjabi', this)" class="cat-btn px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 font-semibold hover:bg-slate-50 transition whitespace-nowrap">পাঞ্জাবি</button>
+        <button onclick="filterCategory('kabli', this)" class="cat-btn px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 font-semibold hover:bg-slate-50 transition whitespace-nowrap">কাবলি সেট</button>
+        <button onclick="filterCategory('sherwani', this)" class="cat-btn px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 font-semibold hover:bg-slate-50 transition whitespace-nowrap">শেরওয়ানি</button>
       </div>
     </div>
 
-    <!-- Product Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="catalogGrid">
-      <!-- Injected by JS -->
-    </div>
-  </section>
-
-  <!-- Customer Reviews & Social Proof -->
-  <section class="px-4 py-8 max-w-5xl mx-auto border-t border-gold-500/15">
-    <div class="text-center mb-6">
-      <h3 class="text-xl md:text-2xl font-bold text-white font-serif">গ্রাহকদের বিশ্বস্ত মন্তব্য</h3>
-      <p class="text-xs text-gray-400 mt-1">৮,২০০+ সন্তুষ্ট গ্রাহকের ভালোবাসা</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="bg-royal-900/80 border border-gold-500/20 rounded-2xl p-4">
-        <div class="flex text-amber-400 text-xs mb-2">★★★★★</div>
-        <p class="text-xs text-gray-300 leading-relaxed italic">
-          "চকবাজার থেকে অনলাইনে নেওয়া সেরা পাঞ্জাবি। ফেব্রিক কোয়ালিটি এবং কলারের ফিনিশিং সত্যিই অসাধারণ। হুবহু ছবির মতোই পেয়েছি।"
-        </p>
-        <p class="text-xs text-gold-400 font-bold mt-3">— আসিফ ইকবাল, ধানমন্ডি</p>
-      </div>
-
-      <div class="bg-royal-900/80 border border-gold-500/20 rounded-2xl p-4">
-        <div class="flex text-amber-400 text-xs mb-2">★★★★★</div>
-        <p class="text-xs text-gray-300 leading-relaxed italic">
-          "বিয়ের প্রোগ্রামের জন্য শেরওয়ানি ও কাবলি সেট অর্ডার দিয়েছিলাম। পারফেক্ট সাইজ ও দ্রুত ডেলিভারির জন্য শাহী লেবাসকে ধন্যবাদ!"
-        </p>
-        <p class="text-xs text-gold-400 font-bold mt-3">— তানভীর আহমেদ, উত্তরা</p>
-      </div>
-
-      <div class="bg-royal-900/80 border border-gold-500/20 rounded-2xl p-4">
-        <div class="flex text-amber-400 text-xs mb-2">★★★★★</div>
-        <p class="text-xs text-gray-300 leading-relaxed italic">
-          "হোয়াটসঅ্যাপে মেসেজ দেওয়ার পর দিনই পার্সেল হাতে পেয়েছি। বক্স প্যাকেজিং অনেক প্রিমিয়াম ছিল। গিফট করার জন্য বেস্ট চয়েস।"
-        </p>
-        <p class="text-xs text-gold-400 font-bold mt-3">— মাহিনুর রহমান, বনানী</p>
-      </div>
+    <!-- The 8 Catalog Products Grid -->
+    <div id="catalogGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <!-- Dynamic JS Wholesale Cards -->
     </div>
   </section>
 
   <!-- Showroom Location & Direct Contact -->
-  <section class="px-4 py-8 max-w-5xl mx-auto">
-    <div class="bg-gradient-to-br from-royal-900 via-royal-850 to-royal-900 border border-gold-500/30 rounded-3xl p-6 md:p-8 relative overflow-hidden">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+  <section class="px-3.5 py-6 max-w-5xl mx-auto content-auto">
+    <div class="wholesale-card p-5 sm:p-8 bg-gradient-to-br from-amber-50/70 via-white to-amber-50/40 border border-amber-200">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-5">
         <div>
-          <div class="inline-flex items-center gap-1.5 text-gold-400 text-xs font-bold mb-2">
-            <i data-lucide="map-pin" class="w-4 h-4"></i> চকবাজার শোরুম
+          <div class="inline-flex items-center gap-1.5 text-amber-700 text-xs font-bold mb-1.5">
+            <i data-lucide="map-pin" class="w-4 h-4"></i> চকবাজার পাইকারি শোরুম
           </div>
-          <h3 class="text-2xl font-bold text-white font-serif">সরাসরি শোরুমে এসে কালেকশন দেখুন</h3>
-          <p class="text-xs md:text-sm text-gray-300 mt-2 max-w-lg leading-relaxed">
-            ৩৮/১ মাওলানা মুফতি দ্বীন মোহাম্মদ রোড, উর্দূ রোড (চকবাজার থানার ঠিক সামনে), চকবাজার, পুরান ঢাকা-১২১১
+          <h3 class="text-xl sm:text-2xl font-bold text-slate-900 font-serif">সরাসরি শোরুমে এসে স্যাম্পল ও কোয়ালিটি দেখুন</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-lg leading-relaxed">
+            উর্দূ রোড, চকবাজার, পুরান ঢাকা। জেলা-উপজেলার যেকোনো কাপড়ের ব্যবসায়ী ভাই শোরুমে আমন্ত্রিত।
           </p>
-          <div class="flex flex-wrap items-center gap-4 mt-3 text-xs text-gray-300 font-medium">
-            <span>⏰ প্রতিদিন সকাল ১০টা - রাত ১০টা</span>
-            <span class="text-gold-400 font-mono">📞 01828-672675</span>
-            <span class="text-gray-400">✉️ shahilibasbd@gmail.com</span>
+          <div class="flex flex-wrap items-center gap-3 sm:gap-4 mt-2.5 text-xs text-slate-700 font-semibold">
+            <span>⏰ প্রতিদিন সকাল ৯:০০ টা - রাত ৯:০০ টা</span>
+            <span class="text-amber-800 font-mono">📞 01828-672675</span>
           </div>
         </div>
-        <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-          <a href="tel:01828672675" class="flex items-center justify-center gap-2 bg-royal-800 hover:bg-royal-700 text-white px-5 py-3 rounded-xl border border-gold-500/30 text-xs font-bold transition">
-            <i data-lucide="phone" class="w-4 h-4 text-gold-400"></i>
-            <span>সরাসরি কল করুন</span>
+        <div class="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
+          <a href="tel:01828672675" class="flex items-center justify-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 px-4 py-2.5 rounded-xl text-xs font-bold shadow-xs transition active:scale-95">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            <span>সরাসরি কল দিন</span>
           </a>
-          <a href="https://wa.me/8801828672675" target="_blank" class="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-royal-950 px-6 py-3 rounded-xl text-xs font-black shadow-lg transition">
-            <i data-lucide="message-circle" class="w-4 h-4 fill-royal-950"></i>
-            <span>হোয়াটসঅ্যাপ চ্যাট</span>
+          <a href="https://wa.me/8801828672675" target="_blank" class="flex items-center justify-center gap-1.5 bg-[#25D366] hover:bg-[#20ba5a] text-slate-950 px-4 py-2.5 rounded-xl text-xs font-black shadow-sm transition active:scale-95">
+            <i data-lucide="message-circle" class="w-4 h-4 fill-slate-950"></i>
+            <span>হোয়াটসঅ্যাপে কথা বলুন</span>
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Mobile Sticky Footer Action Bar -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 badge-blur border-t border-gold-500/30 p-3 md:hidden">
+  <!-- Discreet Attribution Footer -->
+  <footer class="text-center py-6 text-xs text-slate-400 border-t border-slate-200">
+    <p>© 2026 Shahi Libas Wholesale. সর্বস্বত্ব সংরক্ষিত।</p>
+    <p class="mt-1 text-[11px] text-slate-500">
+      B2B Catalog by <a href="https://cryptowebbuild.com" target="_blank" class="text-amber-600 font-bold hover:underline">CryptoWebBuild.com</a> • WhatsApp: <a href="https://wa.me/8801977052842" class="text-slate-700 font-semibold">01977052842</a>
+    </p>
+  </footer>
+
+  <!-- Mobile Sticky B2B Bar -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 solid-bottom-bar p-2 md:hidden">
     <div class="flex items-center gap-2 max-w-md mx-auto">
-      <a href="tel:01828672675" class="flex-1 flex items-center justify-center gap-1.5 bg-royal-900 border border-gold-500/30 text-gold-300 py-3 rounded-xl text-xs font-bold">
-        <i data-lucide="phone" class="w-4 h-4"></i>
+      <a href="tel:01828672675" class="flex-1 flex items-center justify-center gap-1 bg-slate-100 hover:bg-slate-200 border border-slate-300 text-slate-800 py-2.5 rounded-xl text-xs font-bold transition active:scale-95">
+        <i data-lucide="phone" class="w-3.5 h-3.5"></i>
         <span>কল</span>
       </a>
-      <a id="stickyOrderBtn" href="#" target="_blank" class="flex-[3] flex items-center justify-center gap-2 bg-gradient-to-r from-[#25D366] to-[#1ebe5d] text-royal-950 py-3 rounded-xl text-xs font-black shadow-lg">
-        <i data-lucide="message-circle" class="w-4 h-4 fill-royal-950"></i>
-        <span>১-ক্লিকে হোয়াটসঅ্যাপে অর্ডার</span>
+      <a id="stickyOrderBtn" href="#" target="_blank" class="flex-[3] flex items-center justify-center gap-1 bg-[#25D366] text-slate-950 py-2.5 rounded-xl text-xs font-black shadow-sm transition active:scale-95">
+        <i data-lucide="file-text" class="w-3.5 h-3.5 fill-slate-950"></i>
+        <span>হোলসেল মেমো অর্ডার</span>
       </a>
     </div>
   </div>
 
-  <!-- Size Guide Modal -->
-  <div id="sizeModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
-    <div class="bg-royal-900 border border-gold-500/30 rounded-2xl p-5 max-w-sm w-full text-center relative shadow-2xl">
-      <button onclick="closeSizeGuide()" class="absolute top-3 right-3 text-gray-400 hover:text-white">
-        <i data-lucide="x" class="w-5 h-5"></i>
-      </button>
-      <div class="w-10 h-10 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mx-auto mb-2">
-        <i data-lucide="ruler" class="w-5 h-5"></i>
-      </div>
-      <h4 class="text-base font-bold text-white mb-1">পাঞ্জাবি সাইজ চার্ট (ইঞ্চি)</h4>
-      <p class="text-xs text-gray-400 mb-4">আপনার সঠিক সাইজ বেছে নিন</p>
-      
-      <table class="w-full text-xs text-left border border-gold-500/20 rounded-lg overflow-hidden">
-        <thead class="bg-royal-950 text-gold-400">
-          <tr>
-            <th class="p-2 border-b border-gold-500/20">সাইজ</th>
-            <th class="p-2 border-b border-gold-500/20">বুক (Chest)</th>
-            <th class="p-2 border-b border-gold-500/20">দৈর্ঘ্য (Length)</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gold-500/10 text-gray-300">
-          <tr><td class="p-2 font-bold text-white">৩৮ (M)</td><td class="p-2">৪০"</td><td class="p-2">৪০"</td></tr>
-          <tr class="bg-royal-950/40"><td class="p-2 font-bold text-white">৪০ (L)</td><td class="p-2">৪২"</td><td class="p-2">৪২"</td></tr>
-          <tr><td class="p-2 font-bold text-white">৪২ (XL)</td><td class="p-2">৪৪"</td><td class="p-2">৪৪"</td></tr>
-          <tr class="bg-royal-950/40"><td class="p-2 font-bold text-white">৪৪ (XXL)</td><td class="p-2">৪৬"</td><td class="p-2">৪৫"</td></tr>
-        </tbody>
-      </table>
-      
-      <button onclick="closeSizeGuide()" class="w-full mt-4 bg-gold-500 text-royal-950 py-2 rounded-xl text-xs font-bold">
-        ঠিক আছে
-      </button>
-    </div>
-  </div>
-
-  <!-- JavaScript Application Logic -->
   <script>
-    const catalogProducts = [
+    // 8 Wholesale Punjabi Products from Chawkbazar collection
+    const wholesaleProducts = [
       {
         id: 1,
-        code: 'SLB-101',
-        title: 'রয়্যাল এমব্রয়ডারি চকবাজারি পাঞ্জাবি (বক্স সেট)',
+        code: 'SLB-W-01',
+        title: 'রয়্যাল ব্লু আর্টিজান ডিজিটাল প্রিন্ট পাঞ্জাবি',
         category: 'panjabi',
-        desc: 'চকবাজার ঐতিহ্যবাহী প্রিমিয়াম ফেব্রিক, কলার ও বুকে সূক্ষ্ম বোতাম ও ব্র্যান্ডেড গিফট বক্স।',
-        price: '৳২,২৫০',
-        oldPrice: '৳২,৯৫০',
-        image: 'images/box_details.webp',
-        badge: 'বেস্ট সেলার',
-        sizes: ['৩৮', '৪০', '৪২', '৪৪'],
-        selectedSize: '৪০'
+        unitPrice: 950,
+        bundlePcs: 3,
+        bundlePrice: 2850,
+        retailPriceRange: '৳১,৬৫0 – ৳১,৯৫০',
+        image: 'images/hero_portrait.webp',
+        badge: 'বেস্টসেলার',
+        colorsCount: '৪টি কালার'
       },
       {
         id: 2,
-        code: 'SLB-102',
-        title: 'এক্সক্লুসিভ সিগনেচার স্টুডিও পাঞ্জাবি সেট',
+        code: 'SLB-W-02',
+        title: 'প্রিমিয়াম জ্যাকার্ড উইভিং পাঞ্জাবি',
         category: 'panjabi',
-        desc: '১০০% ব্রিদেবল কমফোর্ট সুতি ব্লেন্ড, পারফেক্ট শোল্ডার ফিটিং ও প্রিমিয়াম কলার ফিনিশিং।',
-        price: '৳২,৪৫০',
-        oldPrice: '৳৩,২০০',
-        image: 'images/fit_features.webp',
-        badge: 'প্রিমিয়াম ফিট',
-        sizes: ['৩৮', '৪০', '৪২', '৪৪'],
-        selectedSize: '৪২'
+        unitPrice: 980,
+        bundlePcs: 3,
+        bundlePrice: 2940,
+        retailPriceRange: '৳১,৭০০ – ৳২,১০০',
+        image: 'images/product_2.webp',
+        badge: 'রানিং ড্রপ',
+        colorsCount: '৩টি কালার'
       },
       {
         id: 3,
-        code: 'SLB-103',
-        title: 'লাক্সারি কটন সিল্ক পার্টি পাঞ্জাবি',
+        code: 'SLB-W-03',
+        title: 'আভিজাত্য কটন এম্ব্রয়ডারি পাঞ্জাবি',
         category: 'panjabi',
-        desc: 'আল্ট্রা-সফট ফিনিশিং, আরামদায়ক ফিটিং এবং আভিজাত্যপূর্ণ শেড।',
-        price: '৳১,৯৫০',
-        oldPrice: '৳২,৬০০',
+        unitPrice: 920,
+        bundlePcs: 3,
+        bundlePrice: 2760,
+        retailPriceRange: '৳১,৬০০ – ৳১,৯০০',
         image: 'images/product_3.webp',
-        badge: 'ট্রেন্ডিং',
-        sizes: ['৩৮', '৪০', '৪২', '৪৪'],
-        selectedSize: '৪০'
+        badge: 'হট ড্রপ',
+        colorsCount: '৪টি কালার'
       },
       {
         id: 4,
-        code: 'SLB-104',
-        title: 'হেরিটেজ ডিজাইনার প্রিন্স কটি সেট',
-        category: 'kabli',
-        desc: 'কটি ও পাঞ্জাবি কম্বিনেশন, যেকোনো বিয়ে ও অনুষ্ঠানে ভিন্ন মাত্রা যোগ করবে।',
-        price: '৳২,৮৫০',
-        oldPrice: '৳৩,৬০০',
+        code: 'SLB-W-04',
+        title: 'ট্রেডিশনাল চকবাজার ব্লেন্ড পাঞ্জাবি',
+        category: 'panjabi',
+        unitPrice: 890,
+        bundlePcs: 3,
+        bundlePrice: 2670,
+        retailPriceRange: '৳১,৫০০ – ৳১,৮৫০',
         image: 'images/product_4.webp',
-        badge: 'রয়্যাল লুক',
-        sizes: ['৩৮', '৪০', '৪২', '৪৪'],
-        selectedSize: '৪০'
+        badge: 'বাজেট ড্রপ',
+        colorsCount: '৩টি কালার'
       },
       {
         id: 5,
-        code: 'SLB-105',
-        title: 'ক্লাসিক এমারেল্ড কাবলি স্যুট সেট',
+        code: 'SLB-W-05',
+        title: 'ক্লাসিক এমারেল্ড কাবলি স্যুট সেট (পায়জামাসহ)',
         category: 'kabli',
-        desc: 'উর্দূ রোডের স্পেশাল কাটিং, প্যান্ট পায়জামাসহ ১০০% প্রিমিয়াম সুতি ফেব্রিক।',
-        price: '৳২,৬৫০',
-        oldPrice: '৳৩,৪০০',
+        unitPrice: 1350,
+        bundlePcs: 3,
+        bundlePrice: 4050,
+        retailPriceRange: '৳২,৪০০ – ৳২,৯০০',
         image: 'images/product_5.webp',
-        badge: 'প্রিমিয়াম কাটিং',
-        sizes: ['৩৮', '৪০', '৪২', '৪৪'],
-        selectedSize: '৪০'
+        badge: 'কাবলি সেট',
+        colorsCount: '৩টি কালার'
       },
       {
         id: 6,
-        code: 'SLB-106',
+        code: 'SLB-W-06',
         title: 'রয়্যাল ব্লু জামদানি কাট পাঞ্জাবি',
         category: 'panjabi',
-        desc: 'বিশেষ অনুষ্ঠানে পরার উপযোগী চকচকে রয়্যাল ব্লু শাইন ও নিখুঁত বোতাম।',
-        price: '৳২,২৫০',
-        oldPrice: '৳২,৯৫০',
+        unitPrice: 950,
+        bundlePcs: 3,
+        bundlePrice: 2850,
+        retailPriceRange: '৳১,৬৫০ – ৳২,০০০',
         image: 'images/product_6.webp',
         badge: 'নতুন আগমন',
-        sizes: ['৩৮', '৪০', '৪২', '৪৪'],
-        selectedSize: '৪২'
+        colorsCount: '৪টি কালার'
       },
       {
         id: 7,
-        code: 'SLB-107',
+        code: 'SLB-W-07',
         title: 'রয়্যাল হোয়াইট অ্যান্ড গোল্ড শেরওয়ানি',
         category: 'sherwani',
-        desc: 'বিয়ের প্রধান অনুষ্ঠানের জন্য তৈরি বর শেরওয়ানি, সাথে ম্যাচিং পাগড়ি অপশন।',
-        price: '৳৮,৯৫০',
-        oldPrice: '৳১১,৫০০',
+        unitPrice: 3800,
+        bundlePcs: 2,
+        bundlePrice: 7600,
+        retailPriceRange: '৳৬,৫০০ – ৳৮,৫০০',
         image: 'images/product_7.webp',
-        badge: 'রয়্যাল গ্রুম',
-        sizes: ['৩৮', '৪০', '৪২', '৪৪'],
-        selectedSize: '৪২'
+        badge: 'ওয়েডিং শেরওয়ানি',
+        colorsCount: '২টি কালার'
       },
       {
         id: 8,
-        code: 'SLB-108',
+        code: 'SLB-W-08',
         title: 'ফেস্টিভ ডিজিটাল প্রিন্ট পাঞ্জাবি',
         category: 'panjabi',
-        desc: 'তরুণদের পছন্দের ট্রেন্ডি প্রিন্ট ও ফর্মাল কাটিং, ক্যাজুয়াল ও পার্টি ব্যবহারে সেরা।',
-        price: '৳১,৮৫০',
-        oldPrice: '৳২,৪৫০',
+        unitPrice: 850,
+        bundlePcs: 3,
+        bundlePrice: 2550,
+        retailPriceRange: '৳১,৪৫০ – ৳১,৮০০',
         image: 'images/product_8.webp',
         badge: 'ডেইলি ফেস্টিভ',
-        sizes: ['৩৮', '৪০', '৪২', '৪৪'],
-        selectedSize: '৩৮'
+        colorsCount: '৪টি কালার'
       }
     ];
 
-    let currentHeroSize = '৪০';
-    let currentHeroDetails = 'বুক ৪২ ইঞ্চি';
+    const WA_PHONE = '8801828672675';
+
+    // Hero state
+    let selectedBundleType = 'master_set';
+    let selectedBundlePcs = 12;
+    let selectedBundlePrice = 11400;
+    let selectedBundleName = 'ফুল ৪-কালার মাস্টার সেট (১২ পিস)';
 
     function switchSpotlight(src, btn) {
-      const img = document.getElementById('mainSpotlightImg');
-      img.style.opacity = '0';
-      setTimeout(() => {
-        img.src = src;
-        img.style.opacity = '1';
-      }, 150);
-
+      document.getElementById('mainSpotlightImg').src = src;
       document.querySelectorAll('.spotlight-thumb').forEach(b => {
-        b.classList.remove('border-2', 'border-gold-400', 'shadow-md');
-        b.classList.add('border', 'border-gold-500/20');
+        b.className = 'spotlight-thumb aspect-video rounded-xl overflow-hidden border border-slate-200 hover:border-amber-400 transition relative';
       });
-      btn.classList.remove('border-gold-500/20');
-      btn.classList.add('border-2', 'border-gold-400', 'shadow-md');
+      btn.className = 'spotlight-thumb active-thumb aspect-video rounded-xl overflow-hidden border-2 border-amber-500 transition relative';
     }
 
-    function selectHeroSize(size, details, btn) {
-      currentHeroSize = size;
-      currentHeroDetails = details;
-      
-      document.querySelectorAll('.hero-size-btn').forEach(b => {
-        b.className = 'hero-size-btn py-2 rounded-xl border border-gold-500/20 text-xs font-semibold bg-royal-800 text-gray-200 hover:bg-royal-700 transition text-center';
-        const spans = b.querySelectorAll('span');
-        if (spans.length > 1) spans[1].className = 'text-[10px] text-gray-400 block';
-      });
+    function selectBundle(type, pcs, price, name, btn) {
+      selectedBundleType = type;
+      selectedBundlePcs = pcs;
+      selectedBundlePrice = price;
+      selectedBundleName = name;
 
-      btn.className = 'hero-size-btn py-2 rounded-xl border border-gold-500 bg-gold-500 text-royal-950 font-bold transition text-center shadow-md';
-      const spans = btn.querySelectorAll('span');
-      if (spans.length > 1) spans[1].className = 'text-[10px] text-royal-950/80 block';
+      document.querySelectorAll('.bundle-btn').forEach(b => {
+        b.className = 'bundle-btn p-2.5 rounded-xl border border-slate-200 bg-white text-left transition hover:border-amber-400 shadow-xs';
+      });
+      btn.className = 'bundle-btn active-bundle p-2.5 rounded-xl border-2 border-amber-500 bg-amber-50/50 text-left transition shadow-sm relative';
+
+      document.getElementById('heroOrderBtnText').innerText = `হোয়াটসঅ্যাপে পাইকারি মেমো পাঠান (বিল: ৳${price.toLocaleString('bn-BD')})`;
 
       updateHeroWhatsAppLink();
     }
 
+    function generateWholesaleMessage(prodTitle, prodCode, bundleName, totalBill) {
+      const shopName = document.getElementById('shopNameInput') ? document.getElementById('shopNameInput').value.trim() : '';
+      const shopLocation = document.getElementById('shopLocationInput') ? document.getElementById('shopLocationInput').value.trim() : '';
+
+      let msg = `আসসালামু আলাইকুম শাহী লেবাস,\n\nআমি চকবাজার পাইকারি ক্যাটালগ দেখে এই পাঞ্জাবির পাইকারি বান্ডেল অর্ডার করতে চাই:\n\n`;
+      if (shopName) msg += `🏪 দোকানের নাম: ${shopName}\n`;
+      if (shopLocation) msg += `📍 জেলা/থানা: ${shopLocation}\n`;
+      msg += `📦 প্রোডাক্ট: ${prodTitle}\n`;
+      msg += `🏷️ কোড: #${prodCode}\n`;
+      msg += `📦 অর্ডারের ধরন: ${bundleName}\n`;
+      msg += `📏 সাইজ রেশিও: প্রতি কালারে ৩৮, ৪০, ৪২\n`;
+      msg += `💵 সর্বমোট পাইকারি বিল: ৳${totalBill.toLocaleString('bn-BD')}\n\n`;
+      msg += `কুরিয়ার কন্ডিশনে ডেলিভারি প্রসেস ও মেমো কনফার্ম করবেন প্লিজ।`;
+      return msg;
+    }
+
     function updateHeroWhatsAppLink() {
-      const phone = '8801828672675';
-      const msg = 'আসসালামু আলাইকুম শাহী লেবাস!\n\nআমি আপনাদের ওয়েবসাইট শোকেস থেকে এই পাঞ্জাবিটি অর্ডার করতে চাই:\n\n👑 প্রোডাক্ট: রয়্যাল ব্লু আর্টিজান ডিজিটাল প্রিন্ট পাঞ্জাবি\n🏷️ কোড: #SLB-ROYAL-01\n📏 সাইজ: ' + currentHeroSize + ' (' + currentHeroDetails + ')\n💰 অফার মূল্য: ৳২,২৫০ (সাথে ফ্রি গিফট বক্স)\n\nচকবাজার শোরুম থেকে এটি কি ক্যাশ অন ডেলিভারিতে পাওয়া যাবে ভাইয়া?';
-      
-      const link = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msg);
+      const msg = generateWholesaleMessage(
+        'রয়্যাল ব্লু আর্টিজান ডিজিটাল প্রিন্ট পাঞ্জাবি',
+        'SLB-W-01',
+        selectedBundleName,
+        selectedBundlePrice
+      );
+      const link = 'https://wa.me/' + WA_PHONE + '?text=' + encodeURIComponent(msg);
       document.getElementById('heroWhatsAppBtn').href = link;
       document.getElementById('stickyOrderBtn').href = link;
     }
 
-    function selectCatalogSize(id, size, btn) {
-      const prod = catalogProducts.find(p => p.id === id);
-      if (prod) {
-        prod.selectedSize = size;
-        const parent = btn.parentElement;
-        parent.querySelectorAll('button').forEach(b => {
-          b.className = 'w-7 h-7 rounded text-[11px] border border-gold-500/20 bg-royal-800 text-gray-300';
-        });
-        btn.className = 'w-7 h-7 rounded text-[11px] border border-gold-500 bg-gold-500 text-royal-950 font-bold';
-        
-        const btnElem = document.getElementById('catOrderBtn-' + id);
-        if (btnElem) {
-          btnElem.href = getCatalogWhatsAppLink(prod);
-        }
-      }
-    }
-
-    function getCatalogWhatsAppLink(prod) {
-      const phone = '8801828672675';
-      const msg = 'আসসালামু আলাইকুম শাহী লেবাস!\n\nআমি আপনাদের শোকেস ক্যাটালগ থেকে এই প্রোডাক্টটি অর্ডার করতে চাই:\n\n👑 প্রোডাক্ট: ' + prod.title + '\n🏷️ কোড: #' + prod.code + '\n📏 সাইজ: ' + prod.selectedSize + '\n💰 মূল্য: ' + prod.price + '\n\nচকবাজার শোরুমে এটি কি স্টকে অ্যাভেইলেবল আছে ভাইয়া?';
-      return 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msg);
-    }
-
     function renderCatalog(items) {
       const grid = document.getElementById('catalogGrid');
-      grid.innerHTML = items.map(p => `
-        <div class="bg-royal-900/90 rounded-2xl border border-gold-500/20 overflow-hidden shadow-lg hover:border-gold-500/50 transition duration-300 flex flex-col justify-between">
-          <div class="relative aspect-square bg-royal-950 overflow-hidden group">
-            <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy">
-            <div class="absolute top-2.5 left-2.5 bg-gold-500 text-royal-950 text-[10px] font-bold px-2 py-0.5 rounded-full shadow">
+      grid.innerHTML = items.map(p => {
+        const msg = encodeURIComponent(
+          `আসসালামু আলাইকুম শাহী লেবাস,\nআমি চকবাজার পাইকারি ক্যাটালগ থেকে এই বান্ডেলটি বুকিং দিতে চাই:\n\n📦 প্রোডাক্ট: ${p.title}\n🏷️ কোড: #${p.code}\n📦 মিনিমাম বান্ডেল: ${p.bundlePcs} পিস (সাইজ ৩৮, ৪০, ৪২)\n💰 পাইকারি রেট: ৳${p.unitPrice}/পিস (মোট বিল: ৳${p.bundlePrice})\n\nস্টক ও ডেলিভারি কনফার্ম করবেন প্লিজ।`
+        );
+        const link = 'https://wa.me/' + WA_PHONE + '?text=' + msg;
+
+        return `
+        <div class="wholesale-card overflow-hidden border border-slate-200 shadow-xs hover:shadow-md transition duration-200 flex flex-col justify-between bg-white">
+          <div class="relative aspect-[3/4] bg-slate-50 overflow-hidden group">
+            <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-102 transition duration-300" loading="lazy">
+            <div class="absolute top-2 left-2 bg-amber-500 text-white text-[9px] font-bold px-2 py-0.5 rounded-full shadow-xs">
               ${p.badge}
             </div>
-            <div class="absolute top-2.5 right-2.5 bg-black/75 text-gold-300 text-[10px] font-mono px-1.5 py-0.5 rounded border border-gold-500/30">
+            <div class="absolute top-2 right-2 bg-white/95 text-slate-800 text-[9px] font-mono font-bold px-1.5 py-0.5 rounded border border-slate-200">
               #${p.code}
+            </div>
+            <div class="absolute bottom-2 left-2 bg-black/75 text-white text-[9px] font-bold px-2 py-0.5 rounded">
+              ${p.colorsCount}
             </div>
           </div>
 
-          <div class="p-3.5 flex-1 flex flex-col justify-between">
+          <div class="p-3 flex-1 flex flex-col justify-between">
             <div>
-              <h4 class="text-xs md:text-sm font-bold text-white line-clamp-1 mb-1">${p.title}</h4>
-              <div class="flex items-baseline gap-2 mb-2">
-                <span class="text-base font-bold text-gold-400 font-serif">${p.price}</span>
-                <span class="text-[11px] text-gray-500 line-through">${p.oldPrice}</span>
+              <h4 class="text-xs font-bold text-slate-900 line-clamp-1 mb-1">${p.title}</h4>
+              
+              <div class="bg-amber-50/60 p-2 rounded-xl border border-amber-200/60 mb-2">
+                <div class="flex items-baseline justify-between">
+                  <span class="text-[10px] text-slate-600 font-medium">পাইকারি রেট:</span>
+                  <span class="text-sm font-black text-amber-800 font-serif">৳${p.unitPrice} <span class="text-[10px] font-normal text-slate-500">/পিস</span></span>
+                </div>
+                <div class="flex items-baseline justify-between mt-0.5 pt-0.5 border-t border-amber-200/40 text-[10px]">
+                  <span class="text-slate-500">৩-পিস বান্ডেল:</span>
+                  <span class="font-bold text-slate-900">৳${p.bundlePrice}</span>
+                </div>
               </div>
 
-              <!-- Mini Size Pills -->
-              <div class="flex items-center gap-1.5 mb-3">
-                ${p.sizes.map(s => `
-                  <button type="button" onclick="selectCatalogSize(${p.id}, '${s}', this)" class="w-7 h-7 rounded text-[11px] border ${s === p.selectedSize ? 'border-gold-500 bg-gold-500 text-royal-950 font-bold' : 'border-gold-500/20 bg-royal-800 text-gray-300'}">
-                    ${s}
-                  </button>
-                `).join('')}
+              <div class="flex items-center justify-between text-[10px] text-slate-500 mb-2.5">
+                <span>রেশিও: ৩৮, ৪০, ৪২</span>
+                <span class="text-emerald-700 font-bold">খুচরা: ${p.retailPriceRange}</span>
               </div>
             </div>
 
-            <a id="catOrderBtn-${p.id}" href="${getCatalogWhatsAppLink(p)}" target="_blank" class="w-full flex items-center justify-center gap-1.5 bg-[#25D366] hover:bg-[#20ba5a] text-royal-950 font-bold py-2 rounded-xl text-xs transition shadow">
-              <i data-lucide="message-circle" class="w-3.5 h-3.5 fill-royal-950"></i>
-              <span>হোয়াটসঅ্যাপে অর্ডার</span>
+            <a href="${link}" target="_blank" class="w-full flex items-center justify-center gap-1.5 bg-[#25D366] hover:bg-[#20ba5a] text-slate-950 font-bold py-2 rounded-xl text-xs transition shadow-xs active:scale-95">
+              <i data-lucide="message-circle" class="w-3.5 h-3.5 fill-slate-950"></i>
+              <span>হোলসেল বান্ডেল বুকিং</span>
             </a>
           </div>
         </div>
-      `).join('');
+        `;
+      }).join('');
 
       lucide.createIcons();
     }
 
     function filterCategory(cat, btn) {
       document.querySelectorAll('.cat-btn').forEach(b => {
-        b.className = 'cat-btn px-3.5 py-1.5 rounded-full bg-royal-900 border border-gold-500/20 text-gray-300 font-medium hover:bg-royal-800 transition whitespace-nowrap';
+        b.className = 'cat-btn px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 font-semibold hover:bg-slate-50 transition whitespace-nowrap';
       });
-      btn.className = 'cat-btn active-cat px-3.5 py-1.5 rounded-full bg-gold-500 text-royal-950 font-bold transition whitespace-nowrap';
+      btn.className = 'cat-btn active-cat px-3 py-1.5 rounded-full bg-amber-500 text-white font-bold transition whitespace-nowrap shadow-xs';
 
       if (cat === 'all') {
-        renderCatalog(catalogProducts);
+        renderCatalog(wholesaleProducts);
       } else {
-        const filtered = catalogProducts.filter(p => p.category === cat);
+        const filtered = wholesaleProducts.filter(p => p.category === cat);
         renderCatalog(filtered);
       }
     }
 
-    function openSizeGuide() {
-      document.getElementById('sizeModal').classList.remove('hidden');
-      document.getElementById('sizeModal').classList.add('flex');
-    }
-
-    function closeSizeGuide() {
-      document.getElementById('sizeModal').classList.add('hidden');
-      document.getElementById('sizeModal').classList.remove('flex');
-    }
-
-    // Init
+    // Initialize
     updateHeroWhatsAppLink();
-    renderCatalog(catalogProducts);
+    renderCatalog(wholesaleProducts);
     lucide.createIcons();
   </script>
 </body>
